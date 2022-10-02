@@ -1,4 +1,4 @@
-# 🚀 Awesome JavaScript Projects
+# 🚀 Blog project for hacktoberfest
 
 ![Banner](./public/banner.png)
 
