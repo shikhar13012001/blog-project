@@ -1,0 +1,32 @@
+.headerSize {
+    font-size: 1.3em !important;
+    height: 80px !important;
+    border-bottom: 1px solid #1e2435 !important;
+}
+.Logo {
+    height: 80px !important;
+    width: 80px !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    display: flex;
+    align-items: center;
+}
+.NavLinks {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.NavLink {
+    margin-right: 20px !important;
+    /*
+    word break none
+    */
+    word-break: none !important;
+    white-space: nowrap !important;
+}
+.NavLink:hover {
+    color: #7971ea !important;
+}
+.profile {
+    border-radius: 100%;
+}

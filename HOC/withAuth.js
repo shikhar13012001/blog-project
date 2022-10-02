@@ -1,0 +1,1 @@
+//TODO: implement withAuth HOC to protect routes from unauthenticated users

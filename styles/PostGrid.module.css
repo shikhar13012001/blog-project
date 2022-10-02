@@ -1,0 +1,30 @@
+.PostGrid {
+    width: 100%;
+    /* min-height: 100vh; */
+}
+
+.PostGridItemText {
+    padding-left: 30px;
+    border-right: 1px solid rgb(52, 52, 52);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.PostGridItemImage {
+    min-height: 60vh;
+    object-fit: contain !important;
+}
+.PostGridItemImage > img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+}
+.ExtraPost {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* .PostGridItemParent{
+    border-bottom: 1px solid rgb(52, 52, 52); 
+
+} */
