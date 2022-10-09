@@ -8,5 +8,17 @@ async function fetcher(...args) {
 }
 
 export default function ViewCounter({ slug, method: verb }) {
-    // TODO: implement view counter using SWR and fetcher function        
+    const { data } = useSWR(`/api/views/${slug}`, fetcher)
+    const views = new Number(data?.views)
+
+    useEffect(() => {
+        const registerView = () =>
+            fetch(`/api/views/${slug}`, {
+                method: 'POST',
+            })
+
+        if (verb === 'POST') registerView()
+    }, [slug, verb])
+
+    return `${views > 0 ? views.toLocaleString() : 0}`
 }
